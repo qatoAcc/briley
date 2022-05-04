@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>briley</title>
+        <style>
+            html {background-color: pink;}
+            #type {
+      display: inline-block;
+      color: lightyellow;
+      font-size: 135%;
+      border: solid 1px ;
+    }
+    h1{text-align: center;}
+    .blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.blink{
+    font-size: 167%;
+    color: lightyellow;
+}
+#typpe{
+    color: lightyellow;
+}
+.oo{
+    font-size: 121%;
+    color: yellow;
+    font-family: trebuchet MS;
+}
+p {
+    font-size: 121%;
+    color: yellow;
+    font-family: sans-serif;
+}
+a {
+    color: white;
+    float: right;
+}
+        </style>
+    </head>
+    <body>
+  <h1>
+<div id="type"></div> <blink class = "blink">|</blink> 
+<div id = 'typpe'></div>
+</h1>
+<br/>
+<br/>
+<p>
+lets start with the things briley IS: 
+</p>
+<ol class = "oo">a material gworl :D <br/> going to saturn :0 <br/> not caring about ur opinion because shes a baddie purrr</ol>
+<a href = "">next page :></a>
+
+  <script>
+  
+    var string = "~ briley ~ blakemore ~";
+    var array = string.split("");
+    var timer;
+    
+    function looper() {
+      if (array.length > 0) {
+        document.getElementById("type").innerHTML += array.shift();
+      } else {
+        clearTimeout(looper);
+      }
+      timer = setTimeout('looper()', 101);
+    }
+    looper();
+
+  </script>
+  <script>
+       var strring = "dedicated webpage";
+    var arrray = strring.split("");
+    var timerr;
+
+    function loopper() {
+      if (arrray.length > 0) {
+        document.getElementById("typpe").innerHTML += arrray.shift();
+      } else {
+        clearTimeout(loopper);
+      }
+      timerr = setTimeout('loopper()', 104);
+    }
+    loopper();
+  </script>
+    </body>
+</html>
